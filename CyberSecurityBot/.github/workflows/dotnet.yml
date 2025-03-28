@@ -1,0 +1,25 @@
+name: .NET SA Cybersecurity Bot CI
+on: [push]
+
+jobs:
+  build:
+    runs-on: windows-latest
+    env:
+      DOTNET_VERSION: '6.0.x'
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: ${{ env.DOTNET_VERSION }}
+          
+      - name: Verify Assets
+        run: |
+          if not exist "Assets\welcome.wav" (echo "Missing WAV file" && exit 1)
+          if not exist "README.md" (echo "Missing README" && exit 1)
+          
+      - name: Build Project
+        run: dotnet build --configuration Release
