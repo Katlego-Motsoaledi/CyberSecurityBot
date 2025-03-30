@@ -1,26 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using System;
-using System.Media;
-
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Media;
-
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Media;
-using System.Threading;
-
-using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Media;
@@ -28,9 +7,15 @@ using System.Threading;
 
 namespace CyberSecurityBot
 {
+    
+    /// Cybersecurity Awareness Chatbot
+    
     internal class Program
     {
         #region Constants and Fields
+        
+        /// Dictionary storing bot responses with case-insensitive matching
+        
         private static readonly Dictionary<string, string> Responses = new Dictionary<string, string>(
             StringComparer.OrdinalIgnoreCase)
         {
@@ -41,10 +26,16 @@ namespace CyberSecurityBot
             { "safe browsing", "For SA sites, always check .co.za domains and valid SSL certificates." }
         };
 
+        
+        /// ceation of  path to the welcome audio file in WAV format
+        
         private const string AudioFilePath = @"Assets\welcome.wav";
         #endregion
 
         #region Main Entry Point
+        
+        /// Main method execution for the chatbot
+        
         internal static void Main(string[] _)
         {
             PlayWelcomeAudio();
@@ -54,6 +45,9 @@ namespace CyberSecurityBot
         #endregion
 
         #region Core Functionality
+        
+        /// Initialization of conversation method
+        
         private static void StartConversation()
         {
             var userName = GetUserName();
@@ -61,6 +55,9 @@ namespace CyberSecurityBot
             ProcessUserInput();
         }
 
+        
+        /// Method for handling continuous user input until exit command
+        
         private static void ProcessUserInput()
         {
             while (true)
@@ -72,13 +69,16 @@ namespace CyberSecurityBot
                 var input = Console.ReadLine()?.Trim().ToLower();
                 if (input == "exit") break;
 
-                Console.WriteLine(); // Add spacing
+                Console.WriteLine();
                 HandleUserInput(input);
             }
         }
         #endregion
 
         #region Audio Handling
+        
+        ///method for playing welcome audio with error handling for file issuess
+        
         private static void PlayWelcomeAudio()
         {
             try
@@ -106,6 +106,9 @@ namespace CyberSecurityBot
         #endregion
 
         #region User Interaction
+        
+        /// initialization of getters to validate and retrieve user name through console input
+       
         private static string GetUserName()
         {
             string userName;
@@ -123,6 +126,9 @@ namespace CyberSecurityBot
             return userName;
         }
 
+        
+        /// Method for proccessing user input with validation and security checks
+        
         private static void HandleUserInput(string input)
         {
             if (string.IsNullOrWhiteSpace(input))
@@ -147,6 +153,9 @@ namespace CyberSecurityBot
             DisplayResponse(response);
         }
 
+        
+        ///Method for displaying bot responses with typing animation and formatting
+        
         private static void DisplayResponse(string response)
         {
             Console.ForegroundColor = ConsoleColor.Green;
@@ -155,11 +164,14 @@ namespace CyberSecurityBot
                 ? "I didn't understand. Try asking about:\n- Phishing\n- Passwords\n- Safe browsing"
                 : response);
             Console.ResetColor();
-            Console.WriteLine("\n" + new string('═', 50)); // Separator line
+            Console.WriteLine("\n" + new string('═', 50));
         }
         #endregion
 
         #region Display Utilities
+        
+        ///Method for creating typing animation effect for text display
+        
         private static void TypeText(string text, int delay = 50)
         {
             foreach (var c in text)
@@ -167,9 +179,12 @@ namespace CyberSecurityBot
                 Console.Write(c);
                 Thread.Sleep(delay);
             }
-            Console.WriteLine(); // Ensure newline
+            Console.WriteLine();
         }
 
+        
+        ///Method for displaying a South African themed ASCII art header
+        
         private static void DisplayAsciiArt()
         {
             Console.ForegroundColor = ConsoleColor.Cyan;
@@ -192,6 +207,9 @@ namespace CyberSecurityBot
             Console.ResetColor();
         }
 
+       
+        ///Method for displaying personalized welcome message with SA topics
+        
         private static void DisplayWelcomeMessage(string userName)
         {
             Console.ForegroundColor = ConsoleColor.Magenta;
