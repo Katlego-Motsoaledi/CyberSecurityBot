@@ -47,7 +47,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include=".github\workflows\dotnet.yml" />
+    <None Include=".github\workflows\data-dotnet.yml" />
+    <None Include=".github\workflows\dataset-dotnet-desktop.yml" />
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
