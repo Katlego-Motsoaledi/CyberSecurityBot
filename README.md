@@ -1,6 +1,14 @@
 ﻿<h1>CyberSecurityBot – Cybersecurity Awareness Chatbot</h1>
 
 <p>
+  <img src="https://img.shields.io/badge/Status-Completed-brightgreen" />
+  <img src="https://img.shields.io/badge/Focus-Cybersecurity-blue" />
+  <img src="https://img.shields.io/badge/Language-C%23-purple" />
+  <img src="https://img.shields.io/badge/Type-Console_Application-orange" />
+</p>
+
+
+<p>
   A C# console-based chatbot designed to educate users about common cybersecurity
   threats and safe online practices. The bot interacts with users through typed
   commands and provides informative responses related to cybersecurity awareness.
