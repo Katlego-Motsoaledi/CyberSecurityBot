@@ -89,10 +89,18 @@ CyberSecurityBot/
 
 <h2>🖼️ Screenshots</h2>
 
-<p>
-  Screenshots of the chatbot interaction and console output will be added here
-  to demonstrate how the application runs and responds to user input.
-</p>
+<h3>Bot Startup</h3>
+<img src="screenshots/01-bot-startup.png" alt="CyberSecurityBot startup screen" width="100%">
+
+<h3>User Interaction</h3>
+<img src="screenshots/02-user-question.png" alt="User asking a cybersecurity question" width="100%">
+
+<h3>Bot Response</h3>
+<img src="screenshots/03-bot-response.png" alt="Bot responding with cybersecurity information" width="100%">
+
+<h3>Conversation Flow</h3>
+<img src="screenshots/04-conversation-flow.png" alt="Example of chatbot conversation flow" width="100%">
+
 
 <hr>
 
