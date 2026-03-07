@@ -1,14 +1,6 @@
 ﻿<h1>CyberSecurityBot – Cybersecurity Awareness Chatbot</h1>
 
 <p>
-  <img src="https://img.shields.io/badge/Status-Completed-brightgreen" />
-  <img src="https://img.shields.io/badge/Focus-Cybersecurity-blue" />
-  <img src="https://img.shields.io/badge/Language-C%23-purple" />
-  <img src="https://img.shields.io/badge/Type-Console_Application-orange" />
-</p>
-
-
-<p>
   A C# console-based chatbot designed to educate users about common cybersecurity
   threats and safe online practices. The bot interacts with users through typed
   commands and provides informative responses related to cybersecurity awareness.
@@ -16,7 +8,7 @@
 
 <hr>
 
-<h2>📌 Project Overview</h2>
+<h2> Project Overview</h2>
 
 <p>
   CyberSecurityBot was developed as an educational tool to promote cybersecurity
@@ -32,7 +24,7 @@
 
 <hr>
 
-<h2>🎯 Objectives</h2>
+<h2> Objectives</h2>
 
 <ul>
   <li>Educate users about common cybersecurity threats</li>
@@ -43,7 +35,7 @@
 
 <hr>
 
-<h2>🚀 Features</h2>
+<h2> Features</h2>
 
 <ul>
   <li>Interactive console-based chatbot</li>
@@ -55,7 +47,7 @@
 
 <hr>
 
-<h2>🛠️ Technologies Used</h2>
+<h2> Technologies Used</h2>
 
 <ul>
   <li>C# (.NET)</li>
@@ -65,7 +57,7 @@
 
 <hr>
 
-<h2>▶️ How to Run the Project</h2>
+<h2> How to Run the Project</h2>
 
 <ol>
   <li>Clone or download this repository.</li>
@@ -77,7 +69,7 @@
 
 <hr>
 
-<h2>📂 Project Structure</h2>
+<h2> Project Structure</h2>
 
 <pre>
 CyberSecurityBot/
@@ -95,7 +87,7 @@ CyberSecurityBot/
 
 <hr>
 
-<h2>🖼️ Screenshots</h2>
+<h2> Screenshots</h2>
 
 <h3>Bot Startup</h3>
 <img src="screenshots/01-bot-startup.png" alt="CyberSecurityBot startup screen" width="100%">
@@ -112,7 +104,7 @@ CyberSecurityBot/
 
 <hr>
 
-<h2>📚 Learning Outcomes</h2>
+<h2> Learning Outcomes</h2>
 
 <ul>
   <li>Understanding basic chatbot logic</li>
